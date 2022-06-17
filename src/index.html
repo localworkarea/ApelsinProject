@@ -8,7 +8,35 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
-			<section class="home"></section>
+	
+
+			<section class="home">
+                <picture>
+                    <source loading="lazy" type="image/webp" media="(min-width: 426px)" 
+                    data-srcset="
+                    @img/sections/1_home.webp 1x, 
+                    @img/sections/1_home@2x.webp 2x"
+                    srcset="
+                    data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7
+                      " />
+                    <source loading="lazy" type="image/webp" data-srcset="@img/sections/13_reviewsHome.webp" 
+                    srcset="
+                    data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7
+                      " />
+                    <source loading="lazy" media="(min-width: 426px)" data-srcset="
+                    @img/sections/1_home.png 1x,
+                    @img/sections/1_home@2x.png 2x" 
+                    srcset="
+                         data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7
+                      " />
+                    <img loading="lazy"
+                        src=" data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7"
+                    data-srcset="
+                        @img/sections/1_home.png " 
+
+                    alt=""
+                </picture>
+            </section>
 			<section class="general"></section>
 			<section class="smart"></section>
 			<section class="cctv"></section>
