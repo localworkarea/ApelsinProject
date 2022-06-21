@@ -1,75 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Главная"
-})
+  @@include('html/_head.htm',{ "title":"Главная" })
 
-<body>
-	<div class="wrapper">
-		@@include('html/_header.htm',{})
-		<main class="page">
-	
-
-			<section class="home">
-                <picture>
-                    <source loading="lazy" type="image/webp" media="(min-width: 426px)" 
-                    data-srcset="
-                    @img/sections/1_home.webp 1x, 
-                    @img/sections/1_home@2x.webp 2x"
-                    srcset="
-                    data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7
-                      " />
-                    <source loading="lazy" type="image/webp" data-srcset="@img/sections/13_reviewsHome.webp" 
-                    srcset="
-                    data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7
-                      " />
-                    <source loading="lazy" media="(min-width: 426px)" data-srcset="
-                    @img/sections/1_home.png 1x,
-                    @img/sections/1_home@2x.png 2x" 
-                    srcset="
-                         data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7
-                      " />
-                    <img loading="lazy"
-                        src=" data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7"
-                    data-srcset="
-                        @img/sections/1_home.png " 
-
-                    alt=""
-                </picture>
-            </section>
-			<section class="general"></section>
-			<section class="smart"></section>
-			<section class="cctv"></section>
-			<section class="sensors"></section>
-			<section class="sensorwater"></section>
-			<section class="benefits"></section>
-			<section class="contactus"></section>
-			<section class="instal"></section>
-			<section class="service"></section>
-			<section class="tarifs"></section>
-			<section class="faq"></section>
-			<section class="reviews"></section>
-			<section class="contactus"></section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		</main>
-		@@include('html/_footer.htm',{})
-	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
-</body>
-
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="home"></section>
+        <section class="general"></section>
+        <section class="smart"></section>
+        <section class="cctv"></section>
+        <section class="sensors"></section>
+        <section class="sensorwater"></section>
+        <section class="benefits"></section>
+        <section class="contactus"></section>
+        <section class="instal"></section>
+        <section class="service"></section>
+        <section class="tarifs"></section>
+        <section class="faq"></section>
+        <section class="reviews"></section>
+        <section class="contactus__container">
+        <p>101 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
+      </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
