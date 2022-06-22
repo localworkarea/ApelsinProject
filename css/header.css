@@ -58,12 +58,41 @@
   position: relative;
 }
 
+.menu__body {
+  position: relative;
+}
+
+.menu__body {
+  position: inherit;
+}
+
 .menu__body img {
   margin-top: 30px;
 }
 
 .menu-open .menu-top-dropdown {
   display: block;
+  opacity: 0;
+  -webkit-animation: ani 0.2s forwards;
+          animation: ani 0.2s forwards;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu-top-dropdown {
@@ -91,6 +120,38 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* language */
+.menu__list-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+
+.menu__link-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 52px;
+  height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.link-lang-active {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: white;
+}
+
+/* burger */
 .icon-menu {
   display: block;
   position: relative;
@@ -184,7 +245,7 @@
 
 .arrow {
   position: absolute;
-  right: -18px;
+  right: -13px;
   top: 4px;
   width: 6px;
   height: 6px;
@@ -211,33 +272,37 @@
   padding: 10px 30px;
   -webkit-animation-name: translateY;
           animation-name: translateY;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 @-webkit-keyframes translateY {
   from {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
     background-color: #39395713;
+    color: rgba(255, 255, 255, 0.035);
   }
   to {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     background-color: #393957;
+    color: white;
   }
 }
 
 @keyframes translateY {
   from {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
     background-color: #39395713;
+    color: rgba(255, 255, 255, 0.035);
   }
   to {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     background-color: #393957;
+    color: white;
   }
 }
 
@@ -292,4 +357,77 @@
 
 .menu-link-bold {
   font-weight: bold;
+}
+
+@media (max-width: 1023px) {
+  .menu-open .menu-top-dropdown,
+  .header__block-top,
+  .header__block-bottom {
+    display: none;
+  }
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
+    background-color: #EC6707;
+  }
+  .icon-menu {
+    display: block;
+  }
+  /* ----- header-mobile -----*/
+  .header__mob {
+    padding: 1px 0;
+    background-color: white;
+    z-index: 10;
+  }
+  .header-logo-mob {
+    padding: 0 10px;
+  }
+  .header-mob-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .block-left-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-open .menu__body-mob {
+    display: block;
+  }
+  .menu__body-mob {
+    display: none;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    max-width: 375px;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid #ECECF2;
+    background-color: white;
+    z-index: 12;
+  }
+  .menu__link-mob {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .list-mob-top {
+    border-bottom: 1px solid #ECECF2;
+  }
+  .block-right-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .right-mob {
+    padding: 0 5px;
+  }
 }
