@@ -1,15 +1,83 @@
 // ====== GENERAL STYLE ==================
-
-
-
-// ====== INDEX.html=======================
 .page {
-    margin-top: 30px;
+    margin-top: 0px;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+.sub-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.btn {
+    font-size: 16px;
+    padding: 15px 44px;
+    border-radius: 79px;
 }
 
+// ====== MAIN =======================
 /* --- SECTION home ---*/
+.home {
+    &__container {
+        position: relative;
+    }
+    &__bckgimage {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    &__linksource {
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 40px;
+        z-index: -1;
+    }
+    &__window {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        margin: 197px auto 0;
+        max-width: 730px;
+        padding: 50px 0;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
 
-
+        background-color: rgb(0 0 0 / 10%);
+        backdrop-filter: blur(22px);
+    }
+    &__window-title {
+        max-width: 456px;
+        color: white;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    &__window-subtext {
+        max-width: 400px;
+        color: white;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &__window-btn {
+        color: white;
+        background-color: #528CF3;
+    }
+    &__window-arrow_btn {
+        display: block;
+        margin: 170px auto 34px;
+        transition: all 0.2s linear;
+    }
+    &__window-arrow_btn:hover {
+        transform: translateY(10px);
+    }
+    &__window-arrow_img {
+    }
+}
 /* --- SECTION general ---*/
 
 

@@ -204,6 +204,8 @@
 
   animation-name: translateY;
   animation-duration: 0.3s;
+
+  z-index: 5;
 }
 .dropdown-child-last-child {
   left: -90px;
@@ -237,6 +239,7 @@
   grid-template-columns: auto auto auto;
   align-items: start;
   justify-content: start;
+  
 }
 .dropdown-block-col {
   display: flex;
@@ -293,6 +296,8 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ECECF2;
+
+  height: 57px;
 }
 .block-left-mob {
   display: flex;
@@ -316,8 +321,8 @@
 		&__body-mob {
       display: none;
       flex-direction:column;
-      position: absolute;
-      top: 63px;
+      position: fixed;
+      top: 57px;
       left: 0;
 
       width: 100%;
@@ -328,6 +333,8 @@
       border: 1px solid #ECECF2;
       background-color: white;
       z-index: 12;
+
+      overflow: auto;
 
 		}
 		&__list-mob {

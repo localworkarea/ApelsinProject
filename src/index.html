@@ -6,8 +6,37 @@
   <div class="wrapper">
     @@include('html/_header.htm',{})
     <main class="page">
-      <section class="home"></section>
-      <section class="general"></section>
+      <section class="home">
+        <div class="home__container">
+          <picture class="home__bckgimage">
+            <source loading="lazy" type="image/webp" media="(min-width: 426px)" data-srcset="
+                          @img/sections/1_home.webp 1x, 
+                          @img/sections/1_home@2x.webp 2x"
+              srcset="data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7" />
+            <source loading="lazy" type="image/webp" data-srcset="
+                          @img/sections/1_home_mob.png 1x, 
+                          @img/sections/1_home_mob@2x.png 2x"
+              srcset="data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7" />
+            <source loading="lazy" media="(min-width: 426px)" data-srcset="
+                          @img/sections/1_home.png 1x,
+                          @img/sections/1_home@2x.png 2x"
+              srcset="data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7" />
+            <img loading="lazy"
+              src=" data:image/gif;base64,R0lGODlhZABkAIAAAP///wAAACH5BAEAAAEALAAAAABkAGQAAAJzjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CGlYAAA7"
+              data-srcset="@img/sections/1_home.png" alt="" />
+          </picture>
+          <div class="home__linksource"><a href="#"><u>Главная</u></a> &#8594; Умный дом &#9473; жилой комплекс</div>
+          <div class="home__window">
+            <h1 class="home__window-title title">"Умный" многоквартирный дом &#9473; будущее, доступное с Apelsin.Net</h1>
+            <p class="home__window-subtext sub-text">Внедрите интеллектуальную систему, сводящую риски к нулю, а комфорт к 100%</p>
+            <button class="home__window-btn btn">Получить умный ключ</button>
+          </div>
+          <button class="home__window-arrow_btn" href=""><img class="home__window-arrow_img" src="@img/sections/1_IconNextDown.svg" alt=""></button>
+        </div>
+      </section>
+      <section class="general">
+
+      </section>
       <section class="smart"></section>
       <section class="cctv"></section>
       <section class="sensors"></section>
@@ -20,6 +49,7 @@
       <section class="faq"></section>
       <section class="reviews"></section>
       <section class="contactus__container">
+
         <p>101 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta velit aliquid fugiat sequi doloribus possimus rerum. At, similique nostrum. Corrupti pariatur debitis ratione facere aliquam rerum asperiores unde? Id. Lorem ipsum
           dolor sit amet consectetur adipisicing elit. Quae possimus itaque molestiae suscipit hic sunt veniam placeat, repudiandae magnam laborum expedita minus eaque! Cumque, quod! Id sapiente placeat ad mollitia? Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Asperiores, natus? Sit minus ut assumenda hic atque illo maiores nihil, maxime ipsam at vel facilis, dolorem suscipit illum molestias earum optio?</p>
