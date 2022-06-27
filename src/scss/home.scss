@@ -359,9 +359,143 @@
 
 
 /* --- SECTION benefits ---*/
+.benefits {
+    padding-top: 100px;
+    &__container {
+    }
+    &__top {
+        text-align: center;
+    }
+    &__top-title {
+        padding-bottom: 10px;
+    }
+    &__top-dscrp {
+        display: inline-block;
+        text-align: center;
+        max-width: 690px;
+        padding-bottom: 60px;
+    }
+    &__top-items {
+        display: flex;
+        gap: 25px
+    }
+    &__top-clmn {
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__top-li {
+        text-align: left;
+        align-items: flex-start;
+    }
+    &__top-img {
+        width: 100%;
+        max-width: 169px;
+    }
+    &__top-img-item {
+        width: 100%;
+        height: auto;
+    }
+    &__top-li-dscrp {
+        max-width: 368px;
+        padding: 0 30px;
+    }
+    &__top-li-title {
+        font-size: 18px;
+        font-weight: 500;
+        padding:20px 0 10px;
+    }
+    &__top-li-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    &__btm {
+        padding: 100px 0;
+        background: linear-gradient(#FFFFFF, #F2F5F9);
+    }
+    &__container-btm {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__btm-title {
+        padding-bottom: 10px;
+    }
+    &__btm-dscrp {
+        display: inline-block;
+        text-align: center;
+        max-width: 690px;
+        padding-bottom: 50px;
+    }
+    &__btm-items {
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__btm-li {
+        gap: 30px;
+    }
+    &__btm-clmn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 25%;
+        max-width: 255px;
+        gap: 20px;
+    }
+    &__btm-img {
+        width: 100%;
+        max-width: 50px;
+        height: auto;
+    }
+    &__btm-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
 
 
 /* --- SECTION contactus ---*/
+.contactus {
+    padding: 100px 0;
+    &__container {
+        position: relative;
+    }
+    &__dscrps-colmn {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 410px;
+        padding-top: 56px;
+        padding-left: 54px;
+    }
+    &__dscrps-title {
+        font-weight: 500;
+        padding-bottom: 18px;
+    }
+    &__dscrps-text {
+        padding-bottom: 28px;
+    }
+    &__dscrps-btn {
+        background-color: #528CF3;
+        color: white;
+        padding-left: 31px;
+        padding-right: 31px;
+        margin-bottom: 54px;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        max-width: 1110px;
+        margin-right: 15px;
+        z-index: -1;
+    }
+    &__img-item {
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 
