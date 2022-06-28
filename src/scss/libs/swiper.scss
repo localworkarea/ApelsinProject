@@ -17,7 +17,7 @@
 	font-style: normal;
 }
 :root {
-	--swiper-theme-color: #007aff;
+	--swiper-theme-color: #4e4e4e7c;
 }
 .swiper {
 	margin-left: auto;
@@ -167,22 +167,60 @@
 	height: var(--swiper-virtual-size);
 }
 :root {
-	--swiper-navigation-size: 44px;
+	--swiper-navigation-size: 15px;
 }
 .swiper-button-next,
 .swiper-button-prev {
 	position: absolute;
-	top: 50%;
-	width: calc(var(--swiper-navigation-size) / 44 * 27);
-	height: var(--swiper-navigation-size);
+	top: 40%;
+	width: 80px;
+	height: 80px;
 	margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
 	z-index: 10;
 	cursor: pointer;
-	display: flex;
+
+	display: none;
 	align-items: center;
 	justify-content: center;
+	
 	color: var(--swiper-navigation-color, var(--swiper-theme-color));
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.322);
+
 }
+/* появление стрелок при наведение на swiper*/
+.instal__slider:hover .swiper-button-prev {
+	display: flex;
+}
+.instal__slider:hover .swiper-button-next {
+	display: flex;
+}
+/* анимация стрелок при наведение на swiper*/
+.swiper-button-prev {
+	animation-name: swiperButtonPrev;
+  	animation-duration: 0.3s;
+}
+@keyframes swiperButtonPrev {
+	from {
+	  transform: translateX(-100px);
+	}
+	to {
+	  transform: translateX(0px);
+	}
+  }
+.swiper-button-next {
+	animation-name: swiperButtonNext;
+  	animation-duration: 0.3s;
+}
+@keyframes swiperButtonNext {
+	from {
+	  transform: translateX(100px);
+	}
+	to {
+	  transform: translateX(0px);
+	}
+  }
+
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
 	opacity: 0.35;
@@ -201,7 +239,7 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-	left: 10px;
+	left: 30px;
 	right: auto;
 }
 .swiper-button-prev:after,
@@ -210,8 +248,9 @@
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-	right: 10px;
+	right: 30px;
 	left: auto;
+
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
@@ -220,6 +259,8 @@
 .swiper-button-lock {
 	display: none;
 }
+
+
 .swiper-pagination {
 	position: absolute;
 	text-align: center;
@@ -365,43 +406,6 @@ button.swiper-pagination-bullet {
 	top: 0;
 }
 .swiper-pagination-lock {
-	display: none;
-}
-.swiper-scrollbar {
-	border-radius: 10px;
-	position: relative;
-	-ms-touch-action: none;
-	background: rgba(0, 0, 0, 0.1);
-}
-.swiper-horizontal > .swiper-scrollbar {
-	position: absolute;
-	left: 1%;
-	bottom: 3px;
-	z-index: 50;
-	height: 5px;
-	width: 98%;
-}
-.swiper-vertical > .swiper-scrollbar {
-	position: absolute;
-	right: 3px;
-	top: 1%;
-	z-index: 50;
-	width: 5px;
-	height: 98%;
-}
-.swiper-scrollbar-drag {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	left: 0;
-	top: 0;
-}
-.swiper-scrollbar-cursor-drag {
-	cursor: move;
-}
-.swiper-scrollbar-lock {
 	display: none;
 }
 .swiper-zoom-container {

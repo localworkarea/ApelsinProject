@@ -498,8 +498,58 @@
 }
 
 
-
 /* --- SECTION instal ---*/
+.instal {
+    padding-bottom: 100px;
+    &__container {
+        text-align: center;
+        
+    }
+    &__title {
+        padding-bottom: 20px;
+    }
+    &__text {
+        display: inline-block;
+        padding-bottom: 40px;
+        max-width: 565px;
+    }
+    &__slider {
+    }
+    &__wrapper {
+    }
+    &__slide {
+        padding-bottom: 5px;
+    }
+    &__card {
+        max-width: 365px;
+        height: 468px;
+        box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
+    &__card-img {
+        width: 365px;
+        height: 254px;
+    }
+    &__img-item {
+        width: 100%;
+        height: 100%;
+
+    }
+    &__card-dscrp {
+        text-align: left;
+        padding: 15px 30px 30px 30px;
+    }
+    &__card-title {
+        padding-bottom: 10px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__card-text {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}
 
 
 /* --- SECTION service ---*/
