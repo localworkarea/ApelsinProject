@@ -1,3 +1,80 @@
-//====================================================================================================
-
-//====================================================================================================
+.footer {
+    background-color: #252525;
+    padding: 40px 0;
+    &__container {
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+    }
+}
+.footer-left {
+}
+.footer-left-top {
+}
+.footer-left-top-logo {
+    padding-bottom: 20px;
+}
+.footer-left-top-lgl {
+    color: white;
+}
+.footer-left-bottom {
+    display: flex;
+    flex-direction: column;
+}
+.footer-left-bottom-refs {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.6;
+}
+.footer-left-bottom-ref {
+    font-size: 12px;
+}
+.footer-left-bottom-app {
+    display: flex;
+}
+.footer-left-bottom-txt {
+    color: white;
+    font-size: 12px;
+}
+.footer-left-bottom-img {
+}
+.footer-center {
+    color: white;
+    opacity: 0.6;
+}
+.footer-center-blocks {
+    display: flex;
+}
+.footer-center-ref {
+    display: flex;
+    flex-direction: column;
+}
+.footer-center-ref-top {
+    display: flex;
+    flex-direction: column;
+}
+.footer-center-ref-bottom {
+    display: flex;
+    flex-direction: column;
+}
+.footer-right {
+}
+.footer-right-block {
+    display: flex;
+    flex-direction: column;
+}
+.footer-right-ref {
+    display: flex;
+    
+}
+.footer-right-ref-img {
+}
+.footer-right-ref-cont {
+    color: white;
+    opacity: 0.6;
+    font-size: 12px;
+}

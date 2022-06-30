@@ -4,20 +4,28 @@
 // Блок со спойлерами
 .spollers {
 	display: grid;
-	gap: 15px;
+	// gap: 15px;
 }
 // Спойлер
 .spollers__item {
 	font-size: rem(20);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	
+}
+.spollers__item:last-child {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 // Заголовок спойлера
 .spollers__title {
 	width: 100%;
 	cursor: default;
 	text-align: left;
-	border: 1px solid #eee;
-	padding: rem(10) rem(15);
-	border-radius: rem(5);
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+
+	padding: 39px 10px 39px 69px;
+	// border-radius: rem(5);
 	position: relative;
 	._spoller-init & {
 		cursor: pointer;
@@ -25,65 +33,37 @@
 		&::after {
 			content: "";
 			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
+			left: 0px;
+			top: 31%;
 			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
-		}
-		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
-			}
-		}
-		
-		._spoller-init & {
-			position: relative;
-			width: 100%;
-			text-align: left;
-			&::before,
-			&::after {
-				content: "";
-				position: absolute;
-				right: 0;
-				top: rem(12);
-				height: rem(1);
-				transition: all 0.3s ease 0s;
-				width: rem(10);
-				background-color: #000;
-			}
-			&::before {
-				transform: rotate(40deg);
-				right: rem(7);
-			}
-			&::after {
-				transform: rotate(-40deg);
-			}
+
+			width:42px;
+			height:42px;
+			background:
+				linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
+				linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
+				#3E78E0;
+			background-position:center;
+			background-size: 40% 1px,1px 40%; /*thickness = 2px, length = 50% (25px)*/
+			background-repeat:no-repeat;
+			border-radius: 50%;
 		}
 		&._spoller-active {
 			&::before {
-				transform: rotate(-40deg);
+				transform: rotate(135deg);
 			}
 			&::after {
-				transform: rotate(40deg);
+				transform: rotate(135deg);
 			}
 		}
-		
 	}
 }
 // Контент спойлера
 .spollers__body {
-	padding: rem(20);
-	border-radius: rem(5);
-	border: 1px solid #eee;
+	padding: 0px 10px 29px 69px;
+	// border-radius: rem(5);
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	// border: 1px solid #eee;
 }

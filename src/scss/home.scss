@@ -494,6 +494,7 @@
     &__img-item {
         width: 100%;
         height: auto;
+        box-shadow: 0 0px 7px 2px rgb(0 0 0 / 5%);
     }
 }
 
@@ -736,8 +737,131 @@
 
 /* --- SECTION faq ---*/
 
+.faq {
+    padding: 100px 0 131px;
+    background-color: #528CF3;
+    &__container {
+    }
+    &__title {
+        padding-bottom: 55px;
+        text-align: center;
+        color: white;
+    }
+}
+
+.spollers {
+    &__item {
+    }
+    &__title {
+    }
+    &__body {
+    }
+}
 
 /* --- SECTION reviews ---*/
+.reviews {
+    padding: 100px 0;
+    &__container {
+    }
+    &__title {
+        width: 490px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__slider {
+    }
+    &__wrapper {
+    }
+    &__slide {
+    }
+    &__card {
+        width: 540px;
+    }
+    &__card-img {
+        width: 540px;
+    }
+    &__card-img-item {
+        width: 540px;
+    }
+    &__dscrp {
+        padding-top: 15px;
+    }
+}
+.swiper-2 {
+    margin-bottom: 60px;
+}
+
+.reviews {
+
+    &__testim-card {
+        width: 350px;
+        height: 390px;
+        box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 29px 29px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__testim-card img {
+        
+    }
+    &__testim-card-block {
+      
+    }
+    &__testim-card-head {
+        display: flex;
+        padding-bottom: 15px;
+    }
+    &__testim-card-img {
+        width: 60px;
+        height: 60px;
+    }
+    &__testim-card-flex {
+        padding-left: 15px;
+    }
+    &__testim-card-img-st {
+        padding-bottom: 7px;
+    }
+    &__testim-card-name {
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+    &__testim-card-main {
+        font-size: 14px;
+        line-height: 1.3;
+        font-weight: 400;
+    }
+    &__testim-card-more {
+        display: block;
+        color: #528CF3;
+    }
+}
+.swiper-3 {
+    padding: 1px;
+    margin: 1px;
+    
+}
+.wrapper-slider-testim {
+    padding: 4px 0 40px 3px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.testim-slide {
+    margin-right: 2px;
+}
 
 
 /* --- SECTION contactus (2) ---*/
+.contactus-section-last {
+    padding: 0px 0px 200px;
+}
+.contactus-title-last {
+    width: 585px;
+}

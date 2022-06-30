@@ -19,7 +19,9 @@
 :root {
 	--swiper-theme-color: #4e4e4e7c;
 }
-.swiper {
+.swiper,
+.swiper-2,
+.swiper-3 {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -185,14 +187,20 @@
 	
 	color: var(--swiper-navigation-color, var(--swiper-theme-color));
 	border-radius: 50%;
-	background-color: rgba(228, 228, 228, 0.404);
+	background-color: rgba(228, 228, 228, 0.65);
 
 }
 /* появление стрелок при наведение на swiper*/
 .instal__slider:hover .swiper-button-prev {
 	display: flex;
 }
+.reviews__slider:hover .swiper-button-prev {
+	display: flex;
+}
 .instal__slider:hover .swiper-button-next {
+	display: flex;
+}
+.reviews__slider:hover .swiper-button-next {
 	display: flex;
 }
 /* анимация стрелок при наведение на swiper*/
@@ -275,7 +283,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-	bottom: 10px;
+	bottom: 0px;
 	left: 0;
 	width: 100%;
 }
